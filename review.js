@@ -54,7 +54,7 @@ async function run() {
           content: `请帮我 review 下面这段代码，指出逻辑、风格或可优化的问题，并给出建议，语言直白，鼓励为主：\n\n${code}`,
         },
       ],
-      max_tokens: 500,
+      max_tokens: 2000,
     });
 
     const review = response.choices[0].message.content;
