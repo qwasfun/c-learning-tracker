@@ -25,7 +25,7 @@ function extractCodeBlock(text) {
 
 async function run() {
   try {
-    const code = extractCodeBlock(issueBody);
+    const code = extractCodeBlock(commentBody);
 
     if (!code) {
       console.log("Issue 内容中未找到代码块，跳过 review。");
