@@ -14,7 +14,10 @@ if (!githubToken || !openaiApiKey || !issueNumber || !commentBody || !repo) {
 }
 
 const octokit = new Octokit({ auth: githubToken });
-const openai = new OpenAI({ apiKey: openaiApiKey });
+const openai = new OpenAI({
+  apiKey: openaiApiKey,
+  baseURL: "https://openrouter.ai/api/v1",
+});
 
 // 简单提取 Markdown 代码块（只提取第一个）
 function extractCodeBlock(text) {
