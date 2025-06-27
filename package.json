@@ -1,0 +1,9 @@
+{
+  "name": "github-comment-review",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@octokit/rest": "^22.0.0",
+    "openai": "^5.8.1"
+  }
+}
